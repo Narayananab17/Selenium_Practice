@@ -47,7 +47,7 @@ public class SelIntro {
 
 		System.out.println(driver.findElement(By.xpath("//*[text()='You are successfully logged in.']")).getText());
 		Assert.assertEquals(driver.findElement(By.xpath("//*[text()='You are successfully logged in.']")).getText(),
-				"You are successfully logged in.");
+				"You are successfully logged ");
 		driver.findElement(By.cssSelector(".logout-btn")).click();
 		driver.close();
 
