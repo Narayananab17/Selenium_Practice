@@ -8,6 +8,9 @@
         <class name="com.practice.E2E_Flight_Booking_Automation"/>
          <class name="com.practice.E2E_Green_Kart_Automation"/>
           <class name="com.practice.DropDownPractise"/>
+          <class name="com.practice.Actions_Examples"/>
+          <class name="com.practice.WindowHandles"/>
+          <class name="com.practice.FrameTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

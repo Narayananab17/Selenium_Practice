@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class E2E_Green_Kart_Automation {
@@ -26,6 +27,11 @@ public class E2E_Green_Kart_Automation {
 		Thread.sleep(3000);
 
 		addItems(driver, itemsNeeded);
+		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+		driver.findElement(By.xpath("//*[text()='PROCEED TO CHECKOUT']")).click();
+		driver.findElement(By.cssSelector(".promoCode")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.cssSelector(".promoBtn")).click();
+		Assert.assertEquals(driver.findElement(By.cssSelector(".promoInfo")).getText(), "Code applied ..!");
 		driver.close();
 
 	}
