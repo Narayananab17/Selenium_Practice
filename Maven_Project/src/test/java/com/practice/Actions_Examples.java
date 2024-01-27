@@ -18,7 +18,7 @@ public class Actions_Examples {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
 		driver.get("https://flipkart.com");
-		driver.findElement(By.cssSelector("span[role='button']")).click();
+		//driver.findElement(By.cssSelector("span[role='button']")).click();
 		WebElement move = driver.findElement(By.xpath("//span[text()='Login']"));
 		Actions action = new Actions(driver);
 		// mouse over action
